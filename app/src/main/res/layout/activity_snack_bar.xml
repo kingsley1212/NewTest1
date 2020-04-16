@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snackBar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnackBarAct">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="点击弹出SnackBar">
+
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:hint="烧录卡就"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tel"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/et"
+                android:hint="烧录卡就"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.example.myapplication.CustomView
+            android:id="@+id/custom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffff00">
+
+        </com.example.myapplication.CustomView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
